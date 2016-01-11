@@ -1,0 +1,25 @@
+{
+  "intents": [
+    {
+      "intent": "GetFirstMovieIntent",
+      "slots": [
+        {
+          "name": "phrase",
+          "type": "LIST_OF_COMMON_WORDS"
+        }
+      ]
+    },
+    {
+      "intent": "GetNextMovieIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

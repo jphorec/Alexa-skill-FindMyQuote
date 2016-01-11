@@ -1,0 +1,13 @@
+GetFirstMovieIntent what movie has the quote {phrase}
+GetFirstMovieIntent get movies for {phrase}
+GetFirstMovieIntent give me movies for {phrase}
+
+GetNextMovieIntent yes
+GetNextMovieIntent yup
+GetNextMovieIntent sure
+GetNextMovieIntent yes please
+
+AMAZON.StopIntent no
+AMAZON.StopIntent nope
+AMAZON.StopIntent no thanks
+AMAZON.StopIntent no thank you
