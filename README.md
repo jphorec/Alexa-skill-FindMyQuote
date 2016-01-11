@@ -11,7 +11,7 @@ To run this Hackathon skill you need to do two things. The first is to deploy th
 4. Name the Lambda Function "Find-My-Quote-Skill".
 5. Select the runtime as Java 8
 6. Go to the the main directory containing pom.xml, and run 'mvn assembly:assembly -DdescriptorId=jar-with-dependencies package'. This will generate a zip file named "alexa-skill-findmyquote-1.0-jar-with-dependencies.jar" in the target directory.
-7. Select Code entry type as "Upload a .ZIP file" and then upload the "alexa-skills-kit-samples-1.0-jar-with-dependencies.jar" file from the build directory to Lambda
+7. Select Code entry type as "Upload a .ZIP file" and then upload the "alexa-skill-findmyquote-1.0-jar-with-dependencies.jar" file from the build directory to Lambda
 8. Set the Handler as findmyquote.FindMyQuoteSpeechletRequestStreamHandler (this refers to the Lambda RequestStreamHandler file in the zip).
 9. Create a basic execution role and click create.
 10. Leave the Advanced settings as the defaults.
@@ -28,7 +28,7 @@ To run this Hackathon skill you need to do two things. The first is to deploy th
 5. Copy the Sample Utterances from the included SampleUtterances.txt. Click Next.
 6. Go back to the skill Information tab and copy the appId. Paste the appId into the FindMyQuoteSpeechletRequestStreamHandler.java file for the variable supportedApplicationIds,
    then update the lambda source zip file with this change and upload to lambda again, this step makes sure the lambda function only serves request from authorized source.
-7. You are now able to start testing your sample skill! You should be able to go to the [Echo webpage](http://echo.amazon.com/#skills) and see your skill enabled.
+7. You are now able to start testing your wicked skill brah! You should be able to go to the [Echo webpage](http://echo.amazon.com/#skills) and see your skill enabled.
 8. In order to test it, try to say some of the Sample Utterances from the Examples section below.
 9. Your skill is now saved and once you are finished testing you can continue to publish your skill.
 
@@ -38,4 +38,3 @@ To run this Hackathon skill you need to do two things. The first is to deploy th
   Alexa: "For no I am your father. The quote is possibly, I am your father., from the movie Star Wars: Episode V - The Empire Strikes Back, which came out in 1980.  There more movies with a similar quote, would you like to get another movie?"
   User: "No."
   Alexa: "Good bye!"
-
