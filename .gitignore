@@ -1,2 +1,23 @@
+*.iml
+.idea/
 target/
-.idea
+/target/
+out/
+*.iws
+*.ipr
+*.log
+*.class
+.classpath
+.project
+atlassian-ide-plugin.xml
+.springBeans
+rebel.xml
+maven-eclipse.xml
+#ignore any emacs temp files
+.settings/
+.mymetadata/
+# Package Files #
+*.jar
+*.war
+*.ear
+*.DS_Store
