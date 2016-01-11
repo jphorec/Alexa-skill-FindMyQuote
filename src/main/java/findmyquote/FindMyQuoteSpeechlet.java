@@ -24,52 +24,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
-/**
- * This sample shows how to create a Lambda function for handling Alexa Skill requests that:
- * 
- * <ul>
- * <li><b>Web service</b>: communicate with an external web service to get events for specified days
- * in history (Wikipedia API)</li>
- * <li><b>Pagination</b>: after obtaining a list of events, read a small subset of events and wait
- * for user prompt to read the next subset of events by maintaining session state</li>
- * <p>
- * <li><b>Dialog and Session state</b>: Handles two models, both a one-shot ask and tell model, and
- * a multi-turn dialog model</li>
- * <li><b>SSML</b>: Using SSML tags to control how Alexa renders the text-to-speech</li>
- * </ul>
- * <p>
- * <h2>Examples</h2>
- * <p>
- * <b>One-shot model</b>
- * <p>
- * User: "Alexa, ask History Buff what happened on August thirtieth."
- * <p>
- * Alexa: "For August thirtieth, in 2003, [...] . Wanna go deeper in history?"
- * <p>
- * User: "No."
- * <p>
- * Alexa: "Good bye!"
- * <p>
- * 
- * <b>Dialog model</b>
- * <p>
- * User: "Alexa, open History Buff"
- * <p>
- * Alexa: "History Buff. What day do you want events for?"
- * <p>
- * User: "August thirtieth."
- * <p>
- * Alexa: "For August thirtieth, in 2003, [...] . Wanna go deeper in history?"
- * <p>
- * User: "Yes."
- * <p>
- * Alexa: "In 1995, Bosnian war [...] . Wanna go deeper in history?"
- * <p>
- * User: "No."
- * <p>
- * Alexa: "Good bye!"
- * <p>
- */
+
 public class FindMyQuoteSpeechlet implements Speechlet {
     private static final Logger log = LoggerFactory.getLogger(FindMyQuoteSpeechlet.class);
 
